@@ -1,0 +1,64 @@
+<html>
+    <body>
+        <script type="text/javascript">
+            document.write("hello world","<br>");
+        </script>
+        <script>
+            // wajp to check two given non-negative
+            //  integer that wheater one of the number (not both) of 7 or 11.
+            function valCheck(a,b){
+                if(!((a%7==0||a%11==0)&&(b%7==0||b%11==0))){
+                    return ((a%7==0||a%11==0)&&(b%7==0||b%11==0))
+                    
+                }else{
+                return false;
+                }
+            }
+            document.write(valCheck(14,21),"<br>");
+            document.write(valCheck(14,20),"<br>");
+            document.write(valCheck(16,20),"<br>");
+        </script>
+        <script>
+            function test_number(x,y){
+                return (x===15||y==15||x+y===15||Math.abs(x-y)===15);
+            }
+            document.write(test_number(15,9),"<br>");
+            document.write(test_number(25,15),"<br>");
+            document.write(test_number(7,8),"<br>");
+            document.write(test_number(25,10),"<br>");
+            document.write(test_number(5,9),"<br>");
+            document.write(test_number(7,9),"<br>");
+            document.write(test_number(9,25),"<br>");
+        </script>
+        <script>
+            function swap(){
+                var txt=document.getElementById("t1").value;
+                document.getElementById("t1").value=document.getElementById("t2").value;
+                document.getElementById("t2").value=txt;
+            }
+        </script>
+        1st value<input type="text" id="t1">
+        2nd value<input type="text" id="t2">
+        <br>
+        <input type="button" value="Swap" onclick="swap()"><br>
+        <script>
+            function add1(){
+                document.getElementById("div1").innerHTML=document.getElementById("t3").value
+            }
+        </script>
+        input and click the button<input type="text" id="t3"><br>
+        <input type="button" value="Click" onclick="add1()">
+        <div id="div1"></div><br>
+        <script>
+            function changestyle(){
+                document.getElementById("div2").style.color="Red";
+                // document.getElementById("div2").style.color="Yellow";
+                document.getElementById("div2").style.width="100";
+                document.getElementById("div2").style.height="50";
+            }
+        </script>
+        <div id="div2">Welcome to all</div>
+        <input type="button" value="Click" onclick="changestyle()"><br>
+        
+    </body>
+</html>
